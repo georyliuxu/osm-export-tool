@@ -17,6 +17,15 @@ before_install:
     - sudo apt-get update -qq
     - sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" >> /etc/apt/sources.list.d/postgresql.list'
     - sudo apt-get update
+    - sudo apt-get install -y postgresql-11
+    - sudo apt-get install -y libgdal20
+    - sudo apt-get install -y libgeos-c1v5
+    - sudo apt-get install -y libjson-c3
+    - sudo apt-get install -y liblwgeom-2.5-0
+    - sudo apt-get install -y libproj12
+    - sudo apt-get install -y libprotobuf-c1
+    - sudo apt-get install -y libsfcgal1
+    - sudo apt-get install -y postgresql-11-postgis-2.5-scripts
     - sudo apt-get install -y postgresql-11-postgis-2.5
     - sudo apt-get install -y gdal-bin libgdal-dev
     - export CPLUS_INCLUDE_PATH=/usr/include/gdal
