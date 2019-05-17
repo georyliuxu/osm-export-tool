@@ -17,7 +17,7 @@ before_install:
     - sudo apt-get update -qq
     - sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" >> /etc/apt/sources.list.d/postgresql.list'
     - sudo apt-get update
-    - sudo apt-get install -y postgresql-client-11
+    - sudo apt-get install -y libpq5
     - sudo apt-get install -y libgssapi-krb5-2
     - sudo apt-get install -y libicu60
     - sudo apt-get install -y libllvm6.0
@@ -25,6 +25,7 @@ before_install:
     - sudo apt-get install -y libstdc++6
     - sudo apt-get install -y libsystemd0
 
+    - sudo apt-get install -y postgresql-client-11
     - sudo apt-get install -y postgresql-11
     - sudo apt-get install -y libgdal20
     - sudo apt-get install -y libgeos-c1v5
